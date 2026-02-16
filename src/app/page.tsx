@@ -7,7 +7,7 @@ export default function Home() {
       {/* HERO */}
       <section className="hero" id="home">
         <div className="logo-top">
-          <Image className="logo-circle" src="/assets/logo.png" alt="KIRK Device logo" width={110} height={110}  />
+          <Image className="logo-circle" src="/assets/logo2.jpeg" alt="KIRK Device logo" width={110} height={110}  />
         </div>
         <div className="hero-grid">
           <div>

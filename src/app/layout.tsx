@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "KIRK™ Collar",
     description: "Rapid‑deployment neck compression collar for traumatic neck bleeds.",
-    images: ["/assets/logo.png"],
+    images: ["/assets/logo2.jpeg"],
   },
 };
 

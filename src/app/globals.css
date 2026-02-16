@@ -229,7 +229,7 @@ footer {
 
 @media (max-width: 880px) {
   .hero-grid { grid-template-columns: 1fr; }
-  .logo-top { top: 4px; }
+  .logo-top { top: 16px; }
   
   .nav-links {
     display: none;
