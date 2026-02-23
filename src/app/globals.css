@@ -182,10 +182,12 @@ footer {
 
 .logo-top {
   position: absolute;
-  top: 1px;
-  margin-top: -55px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: -8px;
+  margin-top: -75px;
+  left: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
   z-index: 5;
 }
 
