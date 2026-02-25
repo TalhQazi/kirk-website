@@ -2,7 +2,7 @@
 import { useForm, ValidationError } from "@formspree/react";
 
 export default function Contact() {
-  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORMSPREE_ID || "");
+  const [state, handleSubmit] = useForm("mgvnzqdp");
   const submitted = state.succeeded;
 
   return (
@@ -13,7 +13,7 @@ export default function Contact() {
       {submitted ? (
         <p>Thank you — we will get back to you shortly.</p>
       ) : (
-        <form onSubmit={handleSubmit} method="POST" action={state.clientInitialized ? undefined : `https://formspree.io/f/${process.env.NEXT_PUBLIC_FORMSPREE_ID ?? ""}` } style={{display:"grid",gap:12,maxWidth:640}}>
+        <form onSubmit={handleSubmit} method="POST" action="https://formspree.io/f/mgvnzqdp" style={{display:"grid",gap:12,maxWidth:640}}>
           <label>
             Name
             <input required name="name" type="text" placeholder="Your name" />

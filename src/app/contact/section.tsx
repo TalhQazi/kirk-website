@@ -2,9 +2,8 @@
 import { useForm } from "@formspree/react";
 
 export default function ContactSection() {
-  const formId = process.env.NEXT_PUBLIC_FORMSPREE_ID;
-  // If formId is missing, avoid calling useForm() and provide a mailto fallback
-  const hasFormspree = Boolean(formId);
+  const formId = "mgvnzqdp";
+  const hasFormspree = true;
   const [state, handleSubmit]: any = hasFormspree
     ? useForm(formId as string)
     : [{ submitting: false, succeeded: false, clientInitialized: false }, (e: any) => {
@@ -22,7 +21,7 @@ export default function ContactSection() {
       {submitted ? (
         <p>Thank you — we will get back to you shortly.</p>
       ) : (
-        <form onSubmit={handleSubmit} method="POST" action={hasFormspree ? `https://formspree.io/f/${formId}` : undefined} style={{display:"grid",gap:12,maxWidth:640}}>
+        <form onSubmit={handleSubmit} method="POST" action="https://formspree.io/f/mgvnzqdp" style={{display:"grid",gap:12,maxWidth:640}}>
           <label>
             Name
             <input required name="name" type="text" placeholder="Your name" />

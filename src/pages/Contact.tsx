@@ -1,7 +1,7 @@
 import { useForm } from "@formspree/react";
 
 export default function Contact() {
-  const formId = import.meta.env.VITE_FORMSPREE_ID as string | undefined;
+  const formId = "mgvnzqdp";
   const hasFormspree = Boolean(formId);
 
   const [state, handleSubmit]: any = hasFormspree
@@ -29,7 +29,7 @@ export default function Contact() {
         <form
           onSubmit={handleSubmit}
           method="POST"
-          action={hasFormspree ? `https://formspree.io/f/${formId}` : undefined}
+          action="https://formspree.io/f/mgvnzqdp"
           style={{ display: "grid", gap: 12, maxWidth: 640 }}
         >
           <label>
