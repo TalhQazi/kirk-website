@@ -50,6 +50,7 @@ header {
   z-index: 50;
   background: #fff;
   border-bottom: 1px solid #eee;
+  color: var(--brand-black);
 }
 
 .container {
