@@ -1,7 +1,7 @@
 export default function Story() {
   return (
     <div className="section">
-      <h1>Built from Tragedy. Designed to Save.</h1>
+      <h1 style={{ textAlign: "center" }}>Built from Tragedy. Designed to Save.</h1>
       <div className="spacer" />
       <div style={{ display: "flex", justifyContent: "center", margin: "24px 0" }}>
         <img

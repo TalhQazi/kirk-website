@@ -20,17 +20,19 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="section">
-      <h2>Contact</h2>
-      <p className="muted">Distributors, press/media, law enforcement inquiries, and bulk orders.</p>
+      <h2 style={{ textAlign: "center", fontSize: 32 }}>Contact</h2>
+      <p className="muted" style={{ textAlign: "center", marginTop: 12 }}>
+        Distributors, press/media, law enforcement inquiries, and bulk orders.
+      </p>
       <div className="spacer" />
       {submitted ? (
-        <p>Thank you — we will get back to you shortly.</p>
+        <p style={{ textAlign: "center" }}>Thank you — we will get back to you shortly.</p>
       ) : (
         <form
           onSubmit={handleSubmit}
           method="POST"
           action="https://formspree.io/f/mgvnzqdp"
-          style={{ display: "grid", gap: 12, maxWidth: 640 }}
+          style={{ display: "grid", gap: 12, maxWidth: 640, margin: "0 auto" }}
         >
           <label>
             Name
@@ -65,7 +67,9 @@ export default function ContactSection() {
         </form>
       )}
       <div className="spacer" />
-      <p className="muted">Email: info@kirkcollar.com • Phone: 207-947-1999 • Address: PO Box 52, Detroit, ME 04929</p>
+      <p className="muted" style={{ textAlign: "center" }}>
+        Email: info@kirkcollar.com • Phone: 207-947-1999 • Address: PO Box 52, Detroit, ME 04929
+      </p>
     </section>
   );
 }
