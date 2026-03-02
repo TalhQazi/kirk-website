@@ -11,8 +11,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #0c0c0c;
   }
 }
 
@@ -291,6 +291,6 @@ label { display: grid; gap: 8px; font-weight: 600; color: var(--brand-black); }
 
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    color-scheme: light;
   }
 }
